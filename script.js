@@ -90,15 +90,20 @@ function newBookList(book) {
     btnDiv.appendChild(btnReadBook);
 
     if (book.read === false) {
-        btnReadBook.textContent = "unread";
+        btnReadBook.textContent = "Unread";
+        btnReadBook.style.backgroundColor = "rgb(236, 229, 229)";
 
     }else {
-        btnReadBook.textContent = 'read';
+        btnReadBook.textContent = 'Read';
+        btnReadBook.style.backgroundColor = "rgb(86, 160, 86)";
+        btnReadBook.style.color = "white";
     };
 
     btnRemoveBook.classList.add('rm-book');
     btnRemoveBook.setAttribute('id', 'removeBook');
-    btnRemoveBook.textContent = "Remove";
+    btnRemoveBook.innerHTML = `
+    <p style="margin: 0px">Remove</p>
+    `;
     btnDiv.appendChild(btnRemoveBook);
 
     library.appendChild(bookDiv);
