@@ -1,3 +1,132 @@
 :root {
-    font-family:  'Roboto',sans-serif;
+    font-family:monospace, Roboto,  sans-serif ;
+}
+
+body {
+    height: 100vh;   
+}
+
+/* main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* header section */
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-title {
+    font-weight: 600;
+    font-size: 4em;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1 / 4;
+}
+
+/* add book button */
+
+.add-book {
+    padding: 8px 8px;
+    grid-column: 2 / 3; 
+    width: 250px;
+    justify-self: center;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+button {
+    font-weight: 600;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 1px lightgrey;
+    cursor: pointer;
+}
+
+/* new book Form style */
+#newBookForm {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+    padding: 10px 50px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 1px lightgrey;
+}
+label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+input {
+    margin: 10px;
+    font-size: 15px;
+    border: 0;
+    box-shadow: 1px 2px 3px 1px lightgrey;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+#read {
+    box-shadow: none;
+}
+.newbookSubmit {
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+/* book list section */
+
+.book-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 2em;
+    width: 80%;
+    
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 13%;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 1px lightgrey;
+    padding: 10px 10px 10px 20px;
+    gap: 10px;
+}
+#title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btndiv {
+    display: flex;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.read-book {
+    width: 50%;
+    padding: 5px 5px;
+    
+}
+.rm-book {
+    width: 50%;
+    padding: 5px 5px;
 }
